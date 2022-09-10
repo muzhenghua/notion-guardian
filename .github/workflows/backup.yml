@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - main
+  # 设置定位时间（10分钟）
   schedule:
-    -   cron: "0 0 * * *"
+    -   cron: "0 10 * * *"
+    
 
 jobs:
   backup:
