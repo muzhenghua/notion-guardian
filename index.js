@@ -37,8 +37,7 @@ const exportFromNotion = async (destination, format) => {
       exportOptions: {
         exportType: format,
         timeZone: `Asia/Shanghai`,
-        locale: `en`,
-        flattenExportFiletree: false
+        locale: `en`
       },
     },
   };
