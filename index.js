@@ -60,9 +60,10 @@ const exportFromNotion = async (destination, format) => {
       process.exit(1);
     }
 
-    console.log(`Exported ${task.status}.`);
+    console.log(`Exported start`);
 
     if (task.state === `success`) {
+      console.log(`Exported ${task.status}.`);
       exportURL = task.status.exportURL;
       console.log(`\nExport finished.`);
       break;
